@@ -62,6 +62,16 @@ function initForm(){
     document.forms[0].shipping.onchange = calcShipping;
 }
 
+//RETURN THE SUM OF THE TOTAL COSTS OF THE PRODUCTS IN THE ORDER FORM
+function productCosts(){
+    oform = document.forms[0];
+    pc0 = parseFloat(oform.cost0.value);
+    pc1 = parseFloat(oform.cost1.value);
+    pc2 = parseFloat(oform.cost2.value);
+    pc3 = parseFloat(oform.cost3.value);
+    return (pc0+pc1+pc2+pc3);
+}
+
 function todayTxt() {
    var Today=new Date();
    return Today.getMonth()+1+"-"+Today.getDate()+"-"+Today.getFullYear();
