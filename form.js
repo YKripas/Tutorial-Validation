@@ -118,6 +118,17 @@ function calcCost(){
     }
 }
 
+//ENSURE THAT THE FORM HAS BEEN FILLED OUT CORRECTLY BEFORE ITS SUBMITTED
+function validateForm(){
+    if (document.forms[0].shipping.selectedIndex ==0) {
+        alert("You must select a shipping option");
+        document.forms[0].shipping.focus();
+        return false;
+    }  else {
+        return true;
+    }
+}
+
 function todayTxt() {
    var Today=new Date();
    return Today.getMonth()+1+"-"+Today.getDate()+"-"+Today.getFullYear();
