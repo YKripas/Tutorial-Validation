@@ -71,7 +71,11 @@ function productCosts(){
     pc3 = parseFloat(oform.cost3.value);
     return (pc0+pc1+pc2+pc3);
 }
-
+//RETURN THE COST OF THE SELECTED SHIPPING OPTION
+function shipExpense(){
+    sindex = document.forms[0].shipping.selectedIndex;
+    return parseFloat(document.forms[0].shipping.options[sindex].value);
+}
 function todayTxt() {
    var Today=new Date();
    return Today.getMonth()+1+"-"+Today.getDate()+"-"+Today.getFullYear();
