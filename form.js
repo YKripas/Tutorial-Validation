@@ -109,14 +109,14 @@ function calcCost(){
     
     if (reqty.test(qty.value)) {
         cost.value = (price.value*qty.value).toFixed(2);
-        calcTotal();
+        calcTotal();}
       else {
           alert("Please enter an integer greater than or equal to 0");
           qty.value=0;
           qty.focus();
       }
     }
-}
+
 
 //ENSURE THAT THE FORM HAS BEEN FILLED OUT CORRECTLY BEFORE ITS SUBMITTED
 function validateForm(){
@@ -127,6 +127,11 @@ function validateForm(){
     }  else {
         return true;
     }
+}
+
+//
+function resetForm() {
+    location.reload();
 }
 
 function todayTxt() {
