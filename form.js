@@ -96,6 +96,28 @@ function calcShipping(){
     calcTotal();
 }
 
+//DISPLAY THE COST OF THE QUANTITY OF ITEMS ORDERED BY CUSTOMER AND UPDATE THE TOTAL COST OF THE ORDER
+function calcCost(){
+    var iNum = (this.id).slice(3);
+    
+    oform = document.forms[0];
+    price = oform.elements["price"+iNum];
+    qty = oform.elements["qty"+iNum];
+    cost = oform.elements["cost"+iNum];
+    
+    reqty = /^\d+$/;
+    
+    if (reqty.test(qty.value)) {
+        cost.value = (price.value*qty.value).toFixed(2);
+        calcTotal();
+      else {
+          alert("Please enter an integer greater than or equal to 0");
+          qty.value=0;
+          qty.focus();
+      }
+    }
+}
+
 function todayTxt() {
    var Today=new Date();
    return Today.getMonth()+1+"-"+Today.getDate()+"-"+Today.getFullYear();
