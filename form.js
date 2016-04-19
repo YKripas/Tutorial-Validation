@@ -76,6 +76,19 @@ function shipExpense(){
     sindex = document.forms[0].shipping.selectedIndex;
     return parseFloat(document.forms[0].shipping.options[sindex].value);
 }
+
+//DISPLAY THE COST OF SALES TAX AND ALSO THE TOTAL COST OF THE ORDER
+function calcTotal(){
+    oform = document.forms[0];
+    
+    ordercost = productCosts();
+    ordertax = ordercost*0.05;
+    ordership = shipExpense();
+    ordertotal = ordercost+ordertax+ordership;
+    
+    oform.tax.value = ordertax.toFixed(2);
+    oform.total.value = ordertotal.toFixed(2);
+}
 function todayTxt() {
    var Today=new Date();
    return Today.getMonth()+1+"-"+Today.getDate()+"-"+Today.getFullYear();
