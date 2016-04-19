@@ -89,6 +89,13 @@ function calcTotal(){
     oform.tax.value = ordertax.toFixed(2);
     oform.total.value = ordertotal.toFixed(2);
 }
+
+//DISPLAY THE COST OF THE SELECTED SHIPPING OPTION AND TO UPDATE TOTAL ORDER COSTS
+function calcShipping(){
+    document.forms[0].shipcost.value = shipExpense();
+    calcTotal();
+}
+
 function todayTxt() {
    var Today=new Date();
    return Today.getMonth()+1+"-"+Today.getDate()+"-"+Today.getFullYear();
