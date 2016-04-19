@@ -1,0 +1,175 @@
+<!Doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link href="style1.css" rel="stylesheet" type="text/css"/>
+        <link href="style2.css" rel="stylesheet" media="screen and (min-width:780px)"/>
+        <link href="mobile.css" rel="stylesheet" media="only screen and(max-width:779px)"/>
+        <link href="print.css" rel="stylesheet" media="print"/>
+            
+
+        
+        <title>
+            Rocky Bear Dojo
+        </title>
+        
+        <script src="zones.js"></script>
+        <!--STARTING THE WORLDCLOCK CALCULATION SCRIPT-->
+        <script type="text/javascript">
+            function worldClock(){
+                //MAKE VAR TODAY = CURRENT DATE
+                var today = new Date;
+                //CALCULATING THE OFFSET OF MY COMPUTERS CLOCK FROM GMT IN MINUTES
+                //CHANGING MINUTES TO MILLISECONDS
+                var offSet = today.getTimezoneOffset()*60*1000;
+                //CALLING THE ADDTIME FUNCTION TO CALCULATE THE 
+                //CURRENT DATE AND TIME IN GMT
+                var GMT = addTime(today,offSet);
+                
+                    //STARTING TO CALCULATE DIFFERENT LOCATIONS
+                    //DENVER
+                    var time1 = addTime(GMT, (-420)*60*1000);
+                    //LONDON
+                    var time2 = addTime(GMT, (-420)*60*1000);
+                    //NEW YORK
+                    var time3 = addTime(GMT, (-300)*60*1000);
+                    //SEATTLE
+                    var time4 = addTime(GMT, (-480)*60*1000);
+                    //SYDNEY
+                    var time5 = addTime(GMT, (660)*60*1000);
+                    //TOKYO
+                    var time6 = addTime(GMT, (540)*60*1000);
+                
+                //PUTTING THE TIMES INTO FIELDS
+                
+                
+                document.zones.place1.value = showTime(time1) ;
+                
+            }
+            
+        
+        </script>
+        <link href="zones.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+        <body onload="setInterval('worldClock()', 1000)">
+            
+            <style type="text/css" >
+                
+                
+            </style>
+            <div id="layout">
+                <header>
+                    
+                    <div id="logo">
+                    <h1>Rocky Bear Dojo</h1>
+                    </div> <!--end logo-->
+                    
+                    <div id="tagline">
+                    <p>Come join Us!<br>You don't have to be great to start, but you have to start to be great! </p>
+                    </div> <!--end tagline-->
+                </header>
+                    <nav><!--Navigational Menu-->
+                        <ul>
+                            <li><a href="Rocky%20Bear%20Club.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="Locations.html" id="menu">Locations</a></li>
+                        </ul>
+                    </nav><!--end of Navigational Menu-->
+            
+                    <section id="content">
+                        <form id="zones" name="zones" action="">
+
+<h2>World Clock</h2>
+
+<div id="timemap">
+
+   <input id="place1" name="place1" size="7"   />
+    <input id="place2" name="place2" size="7"  />
+   <input id="place3" name="place3" size="7"  />
+   <input id="place4" name="place4" size="7"  />
+   <input id="place5" name="place5" size="7"  />
+   <input id="place6" name="place6" size="7"  />
+
+   <img src="map.jpg" alt="World Map" id="map" />
+   <table>
+   <tr>
+   <th id="name1">Denver</th>
+   <th id="name2">London</th>
+   <th id="name3">New York</th>
+   <th id="name4">Seattle</th>
+   <th id="name5">Sydney</th>
+   <th id="name6">Tokyo</th>
+   </tr>
+   </table>
+   <table>
+   <tr>
+   <td id="address3">
+      <p><b>Your Company NY</b><br />
+         10010 Park Street<br />
+         New York, NY 10001<br />
+         <b>Phone: </b>(212) 555-1209<br />
+         <b>Fax: </b>(212) 555-4001
+      </p>
+   </td>
+   <td id="address4">
+      <p><b>Your Company NW</b><br />
+         2349 Mitchell Street<br />
+         Seattle, WA 65091<br />
+         <b>Phone: </b>(381) 555-5499<br />
+         <b>Fax: </b>(381) 555-3181
+      </p>
+   </td>
+   <td id="address1">
+      <p><b>Your Company Denver</b><br />
+         1250 14th Street<br />
+         Denver, CO 80202<br />
+         <b>Phone: </b>(303) 315-8000<br />
+         <b>Fax: </b>(303) 315-8199
+      </p>
+   </td>
+   </tr>
+   <tr>
+   <td id="address2">
+      <p><b>Your Company Europe</b><br />
+         18 Northland Avenue<br />
+         London, England WC2N 5EA<br />
+         <b>Phone: </b>(+44) 0 870 555 7081<br />
+         <b>Fax: </b>(+44) 0 870 555 1788
+      </p>
+   </td>
+   <td id="address5">
+      <p><b>Your Company Pacifica</b><br />
+         171-105 Thomas Street<br />
+         Sydney NSW 2000, Australia<br />
+         <b>Phone: </b>(+61) 2 5555 8993<br />
+         <b>Fax: </b>(+61) 2 5555 7171
+      </p>
+   </td>
+   <td id="address6">
+      <p><b>Your Company Asia</b><br />
+         1-2-99 Sumiyoshi<br />
+         Hakata-Ku<br />
+         Tokyo 140-8781 Japan<br />
+         <b>Phone: </b>(+81) 3 5551 7817<br />
+         <b>Fax: </b>(+81) 3 5551 2398
+      </p>
+   </td>
+   </tr>
+   </table>
+</div>
+</form>
+
+                    </section>
+            
+            <footer>
+            Copyright 2016 by Juozas Kripas
+            </footer>
+            
+            </div><!--end layout-->
+        </body>
+
+
+</html>

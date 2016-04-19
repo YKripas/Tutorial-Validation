@@ -1,0 +1,105 @@
+﻿ <form id="orders" method="post" action="index.html">
+      <h2>Order Form</h2>
+      <p id="datep">
+         <input class="text" id="date" name="date" size="11" value="mm-dd-yyyy" 
+          tabindex="-1" readonly="readonly" />
+      </p>
+
+   <fieldset>
+      <legend>Enter the quantity of each item and press the Tab key</legend>
+      <table cellspacing="2">
+        <thead>
+         <tr><th class="label">Product</th><th>Price</th>
+             <th>Quantity</th><th>Cost</th></tr>
+        </thead>
+       <tbody>
+         <tr>
+             <td class="label">Product 0</td>
+             <td><input name="price0" id="price0" size="8" value="0.99" 
+                 tabindex="-1" readonly="readonly" />
+             </td>
+             <td><input name="qty0" id="qty0" size="8" value="0" />
+             </td>
+             <td><input name="cost0" id="cost0" size="12" value="0.00" 
+              tabindex="-1" readonly="readonly" />
+             </td>
+         </tr>
+         <tr>
+             <td class="label">Product 1</td>
+             <td><input name="price1" id="price1" size="8" value="0.99" 
+              tabindex="-1" readonly="readonly" />
+             </td>
+             <td><input name="qty1" id="qty1" size="8" value="0" />
+             </td>
+             <td><input name="cost1" id="cost1" size="12" value="0.00" 
+              tabindex="-1" readonly="readonly" />
+             </td>
+         </tr>
+         <tr>
+             <td class="label">Product 2</td>
+             <td><input name="price2" id="price2" size="8" value="0.99" 
+              tabindex="-1" readonly="readonly" /></td>
+             <td><input name="qty2" id="qty2" size="8" value="0" />
+             </td>
+             <td><input name="cost2" id="cost2" size="12" value="0.00" 
+              tabindex="-1" readonly="readonly" />
+             </td>
+         </tr>
+         <tr>
+             <td class="label">Product 3</td>
+             <td><input name="price3" id="price3" size="8" value="0.99" 
+              tabindex="-1" readonly="readonly" /></td>
+             <td><input name="qty3" id="qty3" size="8" value="0" />
+             </td>
+             <td><input name="cost3" id="cost3" size="12" value="0.00" 
+              tabindex="-1" readonly="readonly" />
+             </td>
+         </tr>
+         <tr>
+            <td class="label">Product 4</td>
+            <td><input name="price4" id="price4" size="8" value="0.99" 
+              tabindex="-1" readonly="readonly" /></td>
+            <td><input name="qty4" id="qty4" size="8" value="0" />
+            </td>
+            <td><input name="cost4" id="cost4" size="12" value="0.00" 
+              tabindex="-1" readonly="readonly" />
+            </td>
+         </tr>
+        </tbody>
+        <tfoot>
+         <tr><td class="col4" colspan="4">&nbsp;</td></tr>
+         <tr>
+            <td class="col3" colspan="3">Sales Tax (5%)</td>
+            <td><input name="tax" id="tax" size="12" value="0.00" 
+              tabindex="-1" readonly="readonly" />
+            </td>
+         </tr>
+         <tr>
+            <td class="col3" colspan="3">
+                <select id="shipping" name="shipping">
+                <option value="0">Choose a shipping option</option>
+                <option value="4.95">Standard (4-6 business days) $4.95</option>
+                <option value="8.95">Express (2 days) $8.95</option>
+                <option value="12.95">Next Day (1 day) $12.95</option>
+                </select>
+            </td>
+            <td><input name="shipcost" id="shipcost" value="0.00" size="12" 
+              tabindex="-1" readonly="readonly" />
+            </td>
+         </tr>
+         <tr>
+            <td class="col3" colspan="3">TOTAL</td>
+            <td><input name="total" id="total" size="12" value="0.00" 
+              tabindex="-1" readonly="readonly" />
+            </td>
+         </tr>
+        </tfoot>
+      </table>
+      </fieldset>
+  
+      <p id="pbuttons">
+         <input type="reset" value="Reset" />
+         <input type="submit" value="Submit Order" />
+      </p>
+
+   </form>

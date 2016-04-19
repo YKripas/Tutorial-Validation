@@ -1,0 +1,15 @@
+nav{
+    display:none;
+}
+#content{
+    margin-left: 0px;
+}
+body{
+    backface-visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+        
+}
+#layout{
+    border: 0px;
+}

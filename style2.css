@@ -1,0 +1,133 @@
+/*#layout{
+    background-color: white;
+}*/
+
+/*Moving the top menu to the left and making it horizontal*/
+nav {
+    float: left;
+    width: 187px;
+    margin: 0px;
+    padding: 0.5em;
+    height: 470px;
+}
+
+/*applying margins to id'content' area so it wouldnt overlap the menu*/
+#content{
+    margin-left: 200px;
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: black;
+    min-height: 470px;
+}
+
+/*making sure that the next elemen after float is not floating alongside the last float*/
+footer{
+    clear: both;
+}
+
+/*adding images to the bulleted lists*/
+ul li{
+    list-style-image:url(red.gif);
+}
+
+/*Styling the bullet list of the menu*/
+nav li{
+    display: block;
+    list-style: none;
+    list-style-image: none;
+    margin-left: -2em;
+}
+
+/*Applying hovering effects to the menu links*/
+nav a:hover{
+    color: white;
+    text-decoration: underline;
+    
+}
+nav li:hover{
+    background-color: black;
+    color: red;
+}
+
+#logo{
+    background-image:url(logoresize.png);
+    /*background-size: contain;*/
+    /*background-color: aquamarine;*/
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    height: 65px;
+}
+
+/*Assigning a logo image to all h2 headings*/
+h2{
+    background-image:url(rsz_1bullet.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    height: 40px;
+}
+
+h3 span{
+    background-color: rgb(254,0,2);
+}
+
+#contact {
+    float: right;
+    border-style:double;
+    border-width:35%;
+    border-color: black;
+    margin-right: 50px;
+    padding: 5px 5px 5px 5px;
+}
+
+/*Rounded Corners to the header*/       /*ROUND CORNERS HEADER*/
+header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    /*background-image: url(logoresize.png) no-repeat;*/
+    background: linear-gradient(to right, black, white 50%, black);
+    
+}
+footer{                                 /*ROUND CORNERS FOOTER*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#layout{
+    border-radius: 10px;
+}
+
+ /*Displaying every even row in light gray*/
+ .listTable > tbody > tr:nth-of-type(even){
+    background: rgba(60,60,60,0.2);
+    }
+/*Displaying every odd row in white*/
+.listTable > tbody > tr:nth-of-type(odd){
+    background: rgba(255,255,255,0.2);
+    }
+
+/*Drop shadow for img element within .center class*/
+.center img{
+    box-shadow: rgb(128,128,128) 5px 5px 5px;
+    -moz-box-shadow: rgb(128,128,128) 5px 5px 5px;
+    -webkit-box-shadow:rgb(128,128,128) 5px 5px 5px;
+    /*max-width:100%;
+    height:auto;*/
+        
+}
+/*Drop Shadow for the table*/
+.listTable{
+    box-shadow:rgb(128,128,128) 5px 5px 5px;
+    border-radius: 25px;
+}
+
+#logo h1{
+    text-shadow: black 5px 5px 4px;
+}
+/*Adding Gradients*/
+footer{
+    background: linear-gradient(rgb(204,204,153), white);
+    /*-webkit-background: linear-gradient(rgb(204,204,153), black);*/
+    -moz-background: linear-gradient(rgb(204,204,153), black);
+    -ms-background: linear-gradient(rgb(204,204,153), black);
+    -o-background: linear-gradient(rgb(204,204,153), black);
+    }

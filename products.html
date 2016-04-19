@@ -1,0 +1,279 @@
+<!Doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link href="style1.css" rel="stylesheet" type="text/css"/>
+        <link href="style2.css" rel="stylesheet" media="screen and (min-width:780px)"/>
+        <link href="mobile.css" rel="stylesheet" media="only screen and(max-width:779px)"/>
+        <link href="print.css" rel="stylesheet" media="print"/>
+        <script src="list.js" type="text/javascript"></script>
+              
+        
+        <!--Creating styles here for now-->
+        <style type="text/css">
+           
+            /*making the Order buttons*/
+            span.links{
+                background-color: #CCCC99; 
+                border: 3px outset #909043;
+                
+                /*Adjusting the border all the browsers*/
+                    -moz-border-radius: 20px;
+                    -webkit-border-radius: 20px;
+                    border-radius: 20px;
+                
+                display: block;
+                height: 20px;
+                line-height: 20px;
+                font-size: 12px;
+                text-align: center;
+                margin: 0 5px 0 5px;
+                padding: 3px 10px 3px 10px;
+                    }
+            
+              /* Hypertext link style rules*/
+            span.links a{
+                text-decoration: none;
+                font-weight: bold;
+                display: block;
+                color: black;
+                padding: 3px 10px 3px 10px;
+                }
+            /*Hover effects for links*/
+            span.links:hover{
+                background-color: #909043;
+            }
+            span.links a:hover{
+                color: white;
+            }
+            
+            /*listTable rule styles*/
+            .listTable{
+                font-size: 12px;
+                margin: 0px 15% 50px 15%;
+                width: 70%;
+                border-collapse: collapse;
+                background-image:url(bgswirlstran.png);
+                background-position: 5%;
+                background-repeat: no-repeat;
+            }
+           
+            
+            /*Caption style rules*/
+            caption{
+                font-size: 16px;
+                padding-bottom: 20px;
+                color: black;
+                font-weight: bold;
+            }
+            
+            /*Column groups styles*/
+            .firstColumn.lastColumn{
+                width: 22%;
+            }
+            .middleColumn1{
+                width: 40%;
+            }
+            .middleColumn2{
+                width: 16%;
+            }
+            /*applying provided images  to table columns*/
+            .firstColumn{
+                background-image:url(left.jpg);
+                background-position: left;
+                background-repeat: repeat-y;
+            }
+            .middleColumn1.middleColumn2{
+                background-image: url(blank.gif);
+                background-repeat: repeat;
+            }
+            .lastColumn{
+                background-image: url(right.jpg);
+                background-position:right;
+                background-repeat: repeat-y;
+            }
+            
+            /*Table Head Row Group Style rules*/
+            thead tr th{
+                border-bottom: 2px solid gray;
+                background-color: rgb(254,0,2);
+                background-image: url(top.gif);
+                background-position: top;
+                border-image-repeat:repeat;
+                text-align: left;
+                font-weight: bold;
+                
+                
+                }
+            thead tr th:last-of-type{
+                text-align: center;
+            }
+            
+            
+            /*Table Footer Row Group Style rules*/
+            tfoot tr td{
+                border-top: 2px solid gray;
+                text-align: center;
+                background-color: rgb(254,0,2);
+                background-image:url(bottom.gif);
+                background-position:bottom;
+                border-image-repeat:repeat;
+                font-weight: bold;
+                
+                /*background-repeat:no-repeat;*/
+            }
+            /*Table Body Row Group styles rules*/
+            tbody{
+                border: 1px dotted gray;
+            }
+            
+            /*Setting padding for all table cells*/
+            td{
+                padding: 0px 5px 0px 5px;
+            }
+            /*Setting kerning of all table heading cells*/
+            th{
+                letter-spacing: 2px;
+            }
+            /*Setting height of all table rows*/
+            tr{
+                height: 30px;
+            }
+            /*Setting the corners of the table to rounded images
+            Top Left Side*/
+            thead > tr > th:first-of-type{
+                background-image: url(topleft.gif);
+                background-repeat: no-repeat;
+                background-position: top left;
+                /*background-color: white;*/
+            }
+            /*Top Right Side*/
+            thead > tr > th:last-of-type{
+                background-image: url(topright.gif);
+                background-repeat: no-repeat;
+                background-position: top right;
+                /*background-color: white;*/
+            }
+            /*Bottom Left Side*/
+            tfoot > tr >td:first-of-type{
+                background-image: url(bottomleft.gif);
+                background-repeat: no-repeat;
+                background-position: bottom left;
+                
+            }
+            /*Bottom Right Side*/
+            tfoot > tr > td:last-of-type{
+                background-image: url(bottomright.gif);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+                
+            }
+            tfoot > tr > td:last-of-type{
+                border-bottom-right-radius:25px;
+            }
+            tfoot > tr > td:first-of-type{
+                border-bottom-left-radius:25px;
+            }
+            
+        </style>
+
+        
+        <title>
+            Rocky Bear Dojo
+        </title>
+    </head>
+
+        <body>
+            
+            <style type="text/css" >
+                
+                
+            </style>
+            <div id="layout">
+                <header>
+                    
+                    <div id="logo">
+                    <h1>Rocky Bear Dojo</h1>
+                    </div> <!--end logo-->
+                    
+                    <div id="tagline">
+                    <p>Come join Us!<br>You don't have to be great to start, but you have to start to be great! </p>
+                    </div> <!--end tagline-->
+                </header>
+                
+                
+                
+                
+                
+                
+                <nav><!--Navigational Menu-->
+                        <ul>
+                            <li><a href="Rocky%20Bear%20Club.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="details.html">Details</a>  </li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="Locations.html" id="menu">Locations</a></li>
+                            
+                        </ul>
+                    </nav><!--end of Navigational Menu-->
+                <section id="content"> 
+                <!--Starting the table-->
+                <table class="listTable" summary="Shinkyokushin products for the Dojo">
+                    <caption>Shinkyokushin products</caption>
+                    
+                    <!--Adding Column Groups-->
+                    <colgroup>
+                        <col class="firstColumn" />
+                        <col class="middleColumn1" />
+                        <col class="middleColumn2" />
+                        <col class="lastColumn" />
+                    </colgroup>
+                    
+                    <!--Adding a Header Row Group-->
+                    <thead>
+                        <tr>
+                            <th>
+                            </th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Order</th>
+                        </tr>
+                    </thead>
+                    
+                   
+                
+                <!--Adding an actual BOdy Row Group-->
+                <tbody>
+                   <script type="text/javascript">
+                       //FOR for a 
+                    for(var i= 0; i < aName.length; i++){
+                        document.write("<tr><td><img src=' " + aImage[i] + " ' /> </td><td>"+aName[i]+"</td><td>"+aPrice[i]+"</td><td><span class='links'><a href=details.html?id=+i>Order</a></span></td></tr>");
+                        
+                                       
+                    } 
+                       
+                    </script>
+                    
+                </tbody>
+                
+                 <!--Adding a Footer Row Group-->
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Contact Us about custom orders!</td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                
+                </table>
+               </section>      
+            <footer>
+            Copyright 2016 by Juozas Kripas
+            </footer>
+            
+            </div><!--end layout-->
+        </body>
+
+
+</html>

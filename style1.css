@@ -1,0 +1,97 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            padding: 40px 40px 40px 40px;
+            margin: 0px;
+            background-color: white;
+            background-image:url(background.jpg);
+            }
+            
+p,h1,h2,h3,h4 {
+            margin: 0px 0px 0px 0px;
+            padding: 5px 5px 5px 5px;
+            }
+            
+ /*A separate style for <ul> */
+ul {
+            margin-bottom: 0px;
+            margin-top: 0px;
+            }
+h1 {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    color: white;
+    
+    letter-spacing: 5px;
+    padding-bottom: 0px;
+    
+}
+
+h2{
+    color: black;
+    
+}
+
+/*Starting the 'layout' div customization*/
+#layout {
+    /*background-color: white;*/
+    background-color:rgba(254,0,2, 0.9);
+    /*border-color: rgb(254,0,2);*/
+    
+}
+/*Customizing Nav*/
+
+nav{
+    background-color: rgba(254,0,2, 0.6);
+    /*opacity: 0.5;*/
+    padding: 5px 5px 5px 5px;
+        }
+
+/*Logo work*/
+#logo {
+    /*background-color: black;*/
+    padding: 5px 5px 5px 10px;
+    border-bottom: medium; 
+    border-width: medium;
+    border-color: rgb(254,0,2);
+}
+
+#tagline {
+    /*background-color: black;*/
+    color: white;
+    padding: 5px 5px 5px 5px;
+    font-style:oblique;
+    font-size: small;
+}
+
+#content{
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+    border-top: medium;
+    border-color:rgb(254,0,2);
+}
+
+footer{
+    background-color: #CCCC99/* rgb(254,0,2)*/;
+    padding: 5px 5px 5px 5px;
+    font-size: xx-small;
+    text-align: center;
+    
+}
+
+
+/*nav li{
+    display: inline;
+}*/
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+}
+
+/*centering the image using the 'center' class*/
+.center{
+    text-align: center;
+}
